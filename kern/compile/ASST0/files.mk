@@ -379,6 +379,11 @@ main.o: ${S}/main/main.c
 SRCS+=${S}/main/main.c
 OBJS+=main.o
 
+hello.o: ${S}/main/hello.c
+	${COMPILE.c} ${S}/main/hello.c
+SRCS+=${S}/main/hello.c
+OBJS+=hello.o
+
 menu.o: ${S}/main/menu.c
 	${COMPILE.c} ${S}/main/menu.c
 SRCS+=${S}/main/menu.c

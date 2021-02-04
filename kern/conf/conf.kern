@@ -371,6 +371,7 @@ file      thread/thread.c
 #
 
 file      main/main.c
+file main/hello.c
 file      main/menu.c
 
 #
