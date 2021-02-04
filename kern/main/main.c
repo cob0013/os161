@@ -68,6 +68,18 @@ boot(void)
 	kprintf("Put-your-group-name-here's system version %s (%s #%d)\n", 
 		GROUP_VERSION, buildconfig, buildversion);
 	kprintf("\n");
+    hello();
+    DEBUG(DB_VM, "My debug message for VM.\n");
+    DEBUG(DB_LOCORE, "My debug message for LOCORE.\n");
+    DEBUG(DB_SYSCALL, "My debug message for SYSCALL.\n");
+    DEBUG(DB_INTERRUPT, "My debug message for INTERRUPT.\n");
+    DEBUG(DB_DEVICE, "My debug message for DEVICE.\n");
+    DEBUG(DB_THREADS, "My debug message for THREADS.\n");
+    DEBUG(DB_EXEC, "My debug message for EXEC.\n");
+    DEBUG(DB_VFS, "My debug message for VFS.\n");
+    DEBUG(DB_SFS, "My debug message for SFS.\n");
+    DEBUG(DB_NET, "My debug message for NET.\n");
+
 
 	ram_bootstrap();
 	scheduler_bootstrap();
